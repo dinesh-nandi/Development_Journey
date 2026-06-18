@@ -13,12 +13,11 @@ Express.js
 MongoDB
 DSA in C++
 Personal Projects
-Why this repository?
 
+Why this repository?
 I created this repository to track my progress, stay consistent, and share my learning journey publicly. Looking back at old commits and projects will help me see how far I've come.
 
 Current Goal
-
 To become a skilled Full-Stack Developer through consistent learning, project building, and problem solving.
 
 This repository is my proof of that journey.
