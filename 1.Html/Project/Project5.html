@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/submit-me">
+        <header>
+            <h1><u>STUDENT REGISTRATION FORM</u></h1>
+        </header>
+
+        <main>
+            <section id="personal-information">
+            <div>
+                <fieldset>
+                    <legend>1.PERSONAL INFORMATION</legend>
+                    <br>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" placeholder="Enter full name" id="name" name="name">
+                    <br><br>
+
+                    <label for="father">Father's Name:</label>
+                    <input type="text" placeholder="Enter father's name" id="father" name="father">
+                    <br><br>
+
+                    <label for="mother">Mother's Name:</label>
+                    <input type="text" placeholder="Enter mother's name" id="mother" name="mother">
+                    <br><br>
+
+                    <label for="date">Date of Birth:</label>
+                    <input type="date" id="date"  name="date" value="">
+                    <br><br>
+
+                    <label for="gender">Gender:</label>
+
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" name="gender" value="other" id="other">
+                    <label for="other">Other</label>
+
+                </fieldset>
+            </div>
+            </section>
+
+            <br>
+
+            <section id="contact-information">
+                <div>
+                    <fieldset>
+                        <legend>2.CONTACT INFORMATION</legend>
+                        <br>
+
+                        <label for="Email">Email:</label>
+                        <input type="email" placeholder="Enter email" id="Email" name="email">
+                        <br><br>
+
+                        <label for="phn">Phone Number:</label>
+                        <input type="tel" placeholder="Enter phone number" id="phn" name="phone">
+                        <br><br>
+
+                        <label for="address">Address:</label>
+                        <textarea id="address" rows="4" cols="30" placeholder="Enter full address" name="address"></textarea>
+                        <br><br>
+
+                        <label for="city">City:</label>
+                        <input type="text" placeholder="Enter city" name="city" id="city">
+                        <br><br>
+                        
+                        <label for="state">State:</label>
+                        <select name="state" id="state">
+                            <option value="select-state">--Select State--</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Gujrat">Gujarat</option>
+                            <option value="Jammu">Jammu</option>
+                        </select>
+                        <br><br>
+
+                        <label for="code">PIN Code:</label>
+                        <input type="text" placeholder="Enter PIN code" name="code" id="code">
+
+                        
+                    </fieldset>
+                </div>
+            </section>
+
+            <br>
+
+            <section id="academic-information">
+                <div>
+                    <fieldset>
+
+                        <legend>3.ACADEMIC INFORMATION</legend>
+                        <br>
+
+                        <label for="college-name">College Name:</label>
+                        <input type="text" name="college" id="college-name" placeholder="Enter college name">
+                        <br><br>
+
+                        <label for="branch">Branch:</label>
+                        <select name="branch" id="branch">
+                            <option value="select">--Select Branch--</option>
+                            <option value="cse">Computer Science</option>
+                            <option value="civil">Civil</option>
+                            <option value="EEE">Electrical</option>
+                            <option value="Mechanical">Mechanical</option>
+                        </select>
+                        <br><br>
+
+                        <label for="semester">Semester:</label>
+                        <select name="sem" id="semester">
+                            <option value="select">--Select Semester--</option>
+                            <option value="1">1st</option>
+                            <option value="2">2nd</option>
+                            <option value="3">3rd</option>
+                            <option value="4">4th</option>
+                            <option value="5">5th</option>
+                            <option value="6">6th</option>
+                            <option value="7">7th</option>
+                            <option value="8">8th</option>
+                        </select>
+                        <br><br>
+
+                        <label for="cgpa">CGPA:</label>
+                        <input type="number" id="cgpa" name="cgpa" placeholder="Enter CGPA">
+                        <br>
+
+                    </fieldset>
+                </div>
+            </section>
+
+            <br>
+
+            <section id="skills">
+                <div>
+                    <fieldset>
+                        <legend>4.SKILLS KNOWN</legend>
+                        <br>
+
+                        <input type="checkbox" id="cpp" name="c++">
+                        <label for="cpp">C++</label>
+
+                        <input type="checkbox" id="Java" name="java">
+                        <label for="Java">Java</label>
+
+                        <input type="checkbox" id="python" name="python">
+                        <label for="python">Python</label>
+
+                        <input type="checkbox" id="HTML" name="HTML">
+                        <label for="HTML">HTML</label>
+
+                        <input type="checkbox" id="css" name="css">
+                        <label for="css">CSS</label>
+
+                        <input type="checkbox" id="JavaScript" name="JavaScript">
+                        <label for="JavaScript">JavaScript</label>
+
+                        <input type="checkbox" id="React" name="React">
+                        <label for="React">React</label>
+                        <br>
+                    </fieldset>
+                </div>
+            </section>
+            <br>
+
+            <section id="account-creation">
+                <div>
+                    <fieldset>
+                        <legend>5.ACCOUNT CREATION</legend>
+                        <br>
+
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter username" name="username">
+                        <br><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="" name="password">
+                        <br><br>
+
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="">
+                        <br>                       
+
+                    </fieldset>
+                </div>
+            </section>
+            <br>
+
+            <section id="additional-information">
+                <div>
+                    <fieldset>
+                        <legend>6.ADDITIONAL INFORMATION</legend>
+                        <br>
+
+                        <label for="resume">Upload Resume:</label>
+                        <input type="file" name="resume" id="resume">
+                        <br><br>
+
+                        <label for="photo">Upload Photo:</label>
+                        <input type="file" name="photo" id="photo">
+                        <br><br>
+
+                        <label for="website">Personal Website/Linkedin</label>
+                        <input type="url" id="website" placeholder="Enter  URL" name="url">
+                        <br><br>
+
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" id="color" name="color">
+                        <br><br>
+
+                        <label for="time">Preferred Study Time:</label>
+                        <input type="time" id="time" name="time">
+                        <br>
+                    </fieldset>
+                </div>
+            </section>
+            <br>
+
+            <section id="declaration">
+                <fieldset>
+                    <legend>7.DECLARATION</legend>
+                    <br>
+
+                    <input type="checkbox" id="declaration" name="declaration">
+                    <span>I hereby declare that the information provided is correct.</span>
+                    <br>
+
+                </fieldset>
+            </section>
+            <br>
+
+        </main>
+            <footer>
+                <section>
+                    <input type="Submit">
+
+                    <input type="reset">
+                </section>
+            </footer>
+        
+        </form>
+    </div> 
+</body>
+</html>
