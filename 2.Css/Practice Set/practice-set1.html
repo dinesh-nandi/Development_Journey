@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 1</title>
+    <link rel="stylesheet" href="practice-set1.css">
+    <style>
+        /* This is an internal Css */
+        h1{
+            color: red;
+        }
+        #heading{
+            color: aquamarine;
+        }
+        .heading{
+            color: blanchedalmond;
+        }
+        #div{
+            color: blue;
+        }
+        p{
+            color: rgb(101, 142, 35);
+        }
+        #first,#second{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>This a heading.</h1>
+    
+    <div id="heading" style="color: green;">
+        This is a div checking the priority order of the inline, internal and external
+    </div>
+
+    <!-- The priority order is first inline then internal and external -->
+
+    <div id="div">Demonstration of the id Selector</div>
+    <p>Demonstration of the element Selector</p>
+    <h2 class="heading">Demonstration of the class selector</h2>
+
+    <div id="first">First div</div>
+    <div id="second">Second div</div>
+</body>
+</html>
