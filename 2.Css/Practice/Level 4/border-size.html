@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border font-size</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            padding: 5px;
+            margin: 20px;
+        }
+        #With{
+            background-color: hotpink;
+            border: 2px solid black;
+            box-sizing: content-box;
+        }
+        #Without{
+            background-color: greenyellow;
+            border: 2px dashed black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+     <div class="box" id="With">With Border Size</div>
+    <div class="box" id="Without">Without Border Size</div>
+</body>
+</html>

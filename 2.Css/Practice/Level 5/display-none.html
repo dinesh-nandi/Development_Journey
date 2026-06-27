@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display None</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 2px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .dabba{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 2px;
+            margin: 5px;
+            display: inline-block;
+        }
+        #box1{
+            background-color: cornflowerblue;
+        }
+        #box2{
+            background-color: indigo;
+        }
+        #box3{
+            background-color: bisque;
+            display: none;
+        }
+        #box4{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h4>Before using display none</h4>
+    <div class="box" id="box1">Box 1</div>
+    <div class="box" id="box2">Box 2</div>
+
+    <h4>After using display none</h4>
+    <div class="dabba" id="box3">Box 3</div>
+    <div class="dabba" id="box4">Box 4</div>
+</body>
+</html>
