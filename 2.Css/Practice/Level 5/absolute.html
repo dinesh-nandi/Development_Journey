@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: hotpink;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            line-height: 80px;
+        }
+        #box1{
+            position: absolute;
+            top: 40px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Absolute</div>
+    <div class="box" id="box2">Normal</div>
+</body>
+</html>

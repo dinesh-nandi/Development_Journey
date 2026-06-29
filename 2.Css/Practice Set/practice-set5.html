@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 1000vh;
+            background-color: beige;
+        }
+        #demo{
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            border-radius: 50%;
+            position: fixed;
+            left: 75%;
+        }
+        nav a{
+            text-decoration: none;
+            margin-left: 50px;
+            padding: 2px;
+        }
+        header{
+            background-color: rgb(123, 157, 228);
+            position: sticky;
+            top: 0px;
+            border-radius: 8px;
+            height: 30px;
+            z-index: 2;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            background-color: red;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+        }
+        #first{
+            left: 70px;
+            top: 40px;
+            z-index: 1;
+        }
+        footer{
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="demo">
+        </div>
+
+        <div class="box" id="first">
+            First
+        </div>
+
+        <div class="box" id="second">
+            Second
+        </div>
+
+        <div class="box" id="third">
+            Third
+        </div>
+    </main>
+    <br><br>
+    <footer>
+        <p>hi, i am footer here contact us is written</p>
+    </footer>
+</body>
+</html>
