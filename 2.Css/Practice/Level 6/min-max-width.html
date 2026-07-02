@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Max Width</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .min{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            background-color: hotpink;
+        }
+        @media screen and (min-width:300px){
+            .min{
+                background-color: red;
+            }
+        }
+
+        .max{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 2px;
+            background-color: yellow;
+        }
+        @media screen and (max-width:500px){
+            .max{
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="min">Min Width</div>
+    <div class="max">Max Width</div>
+</body>
+</html>

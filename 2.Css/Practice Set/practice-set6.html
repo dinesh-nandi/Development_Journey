@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            padding: 2px;
+            background-color: beige;
+            height: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        nav a{
+            text-decoration: none;
+        }
+        .container{
+            height: 300px;
+            width: 600px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dabba{
+            height: 300px;
+            width: 600px;
+            /* width: 343px; */
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            background-color: yellow;
+        }
+        #box3{
+            background-color: green;
+            /* flex-shrink: 2; */
+            flex-grow: 1;
+        }
+        .responsive{
+            height: 50px;
+            width: 50px;
+            background-color: darkgreen;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        @media screen and (max-width:400px) and (min-width: 300px){
+            .responsive{
+                background-color: red;
+            }
+        }
+        @media screen and (min-width: 400px){
+            .responsive{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="wrapper">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Product</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <img src="../images/meme.png" alt="Billota" height="100px" width="100px">
+        </div>
+
+        <div class="dabba">
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+        </div>
+
+        <div class="responsive">Model</div>
+
+    </main>
+
+</body>
+</html>

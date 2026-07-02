@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 9</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #text{
+            text-align: center;
+        }
+        #container{
+            height: 750px;
+            width: 520px;
+            border: 2px solid black;
+            background-color: beige;
+            display: grid;
+            gap: 5px;
+            grid-template-rows: repeat(8,1fr);
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas:
+            "Header Header Header Header"
+            "Sidebar Hero Hero Profile"
+            "Menu Card-1 Card-2 Ads"
+            "Menu Card-3 Card-4 Ads"
+            "Menu Large-Feature Large-Feature Ads"
+            "Gallery Gallery Gallery Gallery"
+            "Gallery Gallery Gallery Gallery"
+            "Footer Footer Footer Footer";
+        }
+        .gallery{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas:
+            "Image-1 Image-2 Image-3 Image-4"
+            "Image-5 Image-5 Image-6 Image-7";
+        }
+        .gallery-section{
+            grid-area: Gallery;
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+        .box{
+            border: 2px solid black;
+            padding: 2px;
+        }
+        .box1{
+            background-color: rgb(255, 147, 107);
+            grid-area: Header;
+        }
+        .box2{
+            background-color: rgb(85, 251, 251);
+            grid-area: Sidebar;
+        }
+        .box3{
+            background-color: lightgreen;
+            grid-area: Hero;
+        }
+        .box4{
+            background-color: rgb(242, 147, 194);
+            grid-area: Profile;
+        }
+        .box5{
+            background-color: rgb(255, 255, 128);
+            grid-area: Menu;
+        }
+        .box6{
+            background-color: darkgray;
+            grid-area: Card-1;
+        }
+        .box7{
+            background-color: rgb(137, 80, 190);
+            grid-area: Card-2;
+        }
+        .box8{
+            background-color: rgb(138, 0, 103);
+            grid-area: Card-3;
+        }
+        .box9{
+            background-color: rgb(15, 149, 86);
+            grid-area: Card-4;
+        }
+        .box10{
+            background-color: rgb(216, 0, 47);
+            grid-area: Ads;
+        }
+        .box11{
+            background-color: rgb(219, 211, 92);
+            grid-area: Large-Feature;
+        }
+        .box12{
+            background-color: rgb(0, 255, 213);
+            grid-area: Image-1;
+        }
+        .box13{
+            background-color: rgb(0, 255, 213);
+            grid-area: Image-2;
+        }
+        .box14{
+            background-color: rgb(0, 255, 213);
+            grid-area: Image-3;
+        }
+        .box15{
+            background-color: rgb(0, 255, 213);
+            grid-area: Image-4;
+        }
+        .box16{
+            background-color: rgb(0, 255, 213);
+            grid-area: Image-5;
+        }
+        .box17{
+            background-color: rgb(0, 255, 213);
+            grid-area: Image-6;
+        }  
+        .box18{
+            background-color: rgb(0, 255, 213);
+            grid-area: Image-7;
+        }  
+        .box19{
+            background-color: azure;
+            grid-area: Footer;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="text">Practice Set 9</h3>
+
+    <div id="container">
+
+        <div class="box1 box">Header</div>
+        <div class="box2 box">Sidebar</div>
+        <div class="box3 box">Hero</div>
+        <div class="box4 box">Profile</div>
+        <div class="box5 box">Menu</div>
+        <div class="box6 box">Card-1</div>
+        <div class="box7 box">Card-2</div>
+        <div class="box8 box">Card-3</div>
+        <div class="box9 box">Card-4</div>
+        <div class="box10 box">Ads</div>
+        <div class="box11 box">Large-Feature</div>
+
+        <div class="gallery-section">
+            <h2 id="image">Image-Gallery</h2>
+            <div class="gallery">
+            <div class="box12 box">Image-1</div>
+            <div class="box13 box">Image-2</div>
+            <div class="box14 box">Image-3</div>
+            <div class="box15 box">Image-4</div>
+            <div class="box16 box">Image-5</div>
+            <div class="box17 box">Image-6</div>
+            <div class="box18 box">Image-7</div>
+            </div>
+        </div>
+
+        <div class="box19 box">Footer</div>
+
+    </div>
+</body>
+</html>

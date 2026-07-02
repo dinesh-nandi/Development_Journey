@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        #click{
+            width: 150px;
+            height: 60px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            font-weight: 700;
+        }
+        #click:hover{
+            width: 170px;
+            height: 75px;
+            border-radius: 10px;
+            background-color: cadetblue;
+        }
+        #click:active{
+            width: 175px;
+            height: 75px;
+            border-radius: 10px;
+            background-color: red;
+        }
+        input{
+            width: 250px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input:focus{
+            border: 3px solid blue;
+            outline: none;
+        }
+        #visit:visited{
+            color: hotpink;
+            text-decoration: none;
+        }
+        #not-visited:link{
+            color: red;
+        }
+        li:first-child{
+            color: greenyellow;
+        }
+        li:last-child{
+            color: lightblue;
+        }
+        .student:nth-child(3){
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="click">Click Me</button>
+    <br><br>
+
+    <input type="text" placeholder="Enter your Name">
+    <br><br>
+
+    <a id="visit" href="https://www.google.com/">Home</a>
+    <br><br>
+
+    <a id="not-visited" href="https://chatgpt.com/">About</a>
+    <br><br>
+
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Banana</li>
+    </ul>
+    <br><br>
+
+    <div class="students">
+        <div class="student">Rahul</div>
+        <div class="student">Rohan</div>
+        <div class="student">Ankit</div>
+        <div class="student">Amit</div>
+        <div class="student">Vivek</div>
+    </div>
+    
+</body>
+</html>
