@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .fill{
+            height: 25px;
+            width: 90%;
+            background-color: thistle;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 100px;
+            margin-left: 80px;
+            position: relative;
+        }
+        .box{
+            background-color: aqua;
+            height: 100%;
+            border-radius: 20px;
+
+
+            animation-name: progress;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes progress{
+            0%{
+                width: 0%;
+            }
+            90%{
+                width: 95%;
+                
+            }
+            95%{
+                width: 70%;
+               
+            }
+            100%{
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fill">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

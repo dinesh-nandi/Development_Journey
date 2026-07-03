@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin-left: 80px;
+            margin-top: 30px;
+            padding: 5px;
+            transition: all 0.6s ease-in 0s;
+        }
+        #box1:hover{
+            background-color: aquamarine;
+            transform: scale(2);
+        }
+        #box2:hover{
+            background-color: beige;
+            transform: scale(4);
+        }
+        #box3:hover{
+            background-color: pink;
+            transform: scaleX(2);
+        }
+        #box4:hover{
+            background-color: lightgray;
+            transform: scaleY(4);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Scale 2times</div>
+    <div class="box" id="box2">Scales 4times</div>
+    <div class="box" id="box3">Scale Xaxis</div>
+    <div class="box" id="box4">Scale Yaxis</div>
+</body>
+</html>
