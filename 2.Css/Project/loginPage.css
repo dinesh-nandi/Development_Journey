@@ -95,7 +95,7 @@ span{
         font-size: 60px;
     }
 
-    .loginDetails {
+    .input {
         width: 85%;
         gap: 10px;
     }
@@ -105,7 +105,7 @@ span{
         font-size: 16px;
     }
 
-    .password {
+    .remember-forgot{
         font-size: 15px;
         width: 80%;
         display: flex;
@@ -137,7 +137,7 @@ span{
         font-size: 60px;
     }
 
-    .loginDetails {
+    .input {
         width: 85%;
         gap: 10px;
     }
@@ -147,7 +147,7 @@ span{
         font-size: 16px;
     }
 
-    .password {
+    .remember-forgot{
         font-size: 15px;
         width: 80%;
         display: flex;
@@ -177,7 +177,7 @@ span{
         font-size: 90px;
     }
 
-    .loginDetails {
+    .input {
         width: 85%;
         gap: 10px;
     }
@@ -187,7 +187,7 @@ span{
         font-size: 20px;
     }
 
-    .password {
+    .remember-forgot{
         font-size: 20px;
         width: 80%;
         display: flex;
@@ -217,7 +217,7 @@ span{
         font-size: 90px;
     }
 
-    .loginDetails {
+    .input {
         width: 85%;
         gap: 10px;
     }
@@ -227,7 +227,7 @@ span{
         font-size: 20px;
     }
 
-    .password {
+    .remember-forgot {
         font-size: 20px;
         width: 80%;
         display: flex;
