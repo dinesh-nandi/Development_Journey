@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/login_background.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPage{
+    width: 50%;
+    height: 70%;
+    background-color: #86868652;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+    gap: 30px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+h1{
+    font-family: "Lato", sans-serif;
+    font-size: 80px;  
+}
+
+input[type="email"],input[type="password"]{
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.remember-forgot{
+    font-size: 25px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login_btn{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(40deg, rgba(255, 248, 192, 0.616), pink);
+    cursor: pointer;
+}
+span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width:319px){
+        
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .container {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .loginPage {
+        gap: 20px;
+        width: 80%;
+        height: 85%;
+    }
+
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 60px;
+    }
+
+    .loginDetails {
+        width: 85%;
+        gap: 10px;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .password {
+        font-size: 15px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+
+@media screen and (min-width : 481px) and (max-width : 768px) {
+    .container {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .loginPage {
+        gap: 20px;
+        width: 80%;
+        height: 85%;
+    }
+
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 60px;
+    }
+
+    .loginDetails {
+        width: 85%;
+        gap: 10px;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .password {
+        font-size: 15px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width : 769px) and (max-width : 1024px) {
+    .container {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .loginPage {
+        gap: 20px;
+        width: 80%;
+        height: 85%;
+    }
+
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 90px;
+    }
+
+    .loginDetails {
+        width: 85%;
+        gap: 10px;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 18px;
+        font-size: 20px;
+    }
+
+    .password {
+        font-size: 20px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+@media screen and (min-width : 1025px) and (max-width : 1200px) {
+    .container {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .loginPage {
+        gap: 20px;
+        width: 80%;
+        height: 85%;
+    }
+
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 90px;
+    }
+
+    .loginDetails {
+        width: 85%;
+        gap: 10px;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 18px;
+        font-size: 20px;
+    }
+
+    .password {
+        font-size: 20px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+}
