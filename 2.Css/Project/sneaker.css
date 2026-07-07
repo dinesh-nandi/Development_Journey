@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.store{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sneakers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+h1{
+    font-size: 60px;
+    padding: 30px;
+    text-align: center;
+}
+.card{
+    height: 500px;
+    width: 400px;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 8px 18px rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+}
+.card-details{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.card-image{
+    height: 80%;
+    transition: transform 0.4s ease;
+}
+.card-image:hover{
+    transform: scale(1.2);
+
+}
+#image1{
+    background-image: url(../images/sneaker\ 1.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image2{
+    background-image: url(../images/sneaker\ 2.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+    
+}
+#image3{
+    background-image: url(../images/sneaker\ 3.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image4{
+    background-image: url(../images/sneaker\ 4.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image5{
+    background-image: url(../images/sneaker\ 5.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image6{
+    background-image: url(../images/sneaker\ 6.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image7{
+    background-image: url(../images/sneaker\ \ 7.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image8{
+    background-image: url(../images/sneaker\ 8.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image9{
+    background-image: url(../images/sneaker\ 9.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image10{
+    background-image: url(../images/sneaker\ 10.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image11{
+    background-image: url(../images/sneaker\ 11.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
+#image12{
+    background-image: url(../images/sneaker\ 12.jpeg);
+    background-size: cover;
+    border-radius: 30px;
+}
