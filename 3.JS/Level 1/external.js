@@ -1,0 +1,1 @@
+console.log('I am the external file of the js');
