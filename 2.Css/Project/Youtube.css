@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .container{
   height: 100vh;
   width: 100vw;
 }
+
+/* NAVIGATION */
 
 .navigation{
   display: flex;
@@ -78,8 +81,10 @@
   height: 30px;
 }
 
+/* HERO SECTION*/
+
 .hero-section{
-  height: 600px;
+  height: 530px;
   width: 100%;
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -125,7 +130,7 @@
 
 .subscription-text{
   width: 760px;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 25px;
   text-align: center;
   line-height: 1.2;
@@ -144,4 +149,156 @@
 
 .para{
   color: rgb(118, 196, 255);;
+}
+
+/* FEATURE */
+.features{
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.add-free,.downloads ,.yt-music{
+  width: 300px;
+  height: 100%;
+  padding: 10px;
+}
+
+.logo{
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.feature-title{
+  font-size: 30px;
+  text-align: center;
+  margin: 5px;
+}
+
+.feature-text{
+  font-size: 16px;
+  font-weight: 200;
+  text-align: center;
+  margin: 5px;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #222222;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* BACKGROUND*/
+.yt-bg{
+  width: 100%;
+  height: 1700px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+.bg-image1{
+  height: 430px;
+  width: auto;
+  background-image: url(../images/bg1.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.box{
+  height: 250px;
+  width:  584px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bg-title{
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.bg-text{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bg-image2{
+  height: 430px;
+  width: auto;
+  background-image: url(../images/bg2.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-image3{
+  height: 430px;
+  width: auto;
+  background-image: url(../images/bg3.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.bg-image4{
+  height: 430px;
+  width: auto;
+  background-image: url(../images/bg4.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+/* FAQs */
+.faq{
+  height: 600px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-text{
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  margin-right: 300px;
+}
+
+.questions{
+  height: 500px;
+  width: 50%;
 }
