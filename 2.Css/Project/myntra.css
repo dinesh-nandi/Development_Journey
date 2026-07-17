@@ -6,6 +6,7 @@
 
 html,body{
   overflow-x: hidden;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .container{
@@ -44,7 +45,6 @@ html,body{
 .nav-left >a{
   text-decoration: none;
   color: black;
-  font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
   position: relative;
@@ -59,7 +59,7 @@ html,body{
   content: "";
   position: absolute;
   left: 0;
-  bottom: -34px;          
+  bottom: -36px;          
   width: 100%;
   height: 4px;
   background-color: #ff3f6c;
@@ -99,4 +99,304 @@ html,body{
   gap: 15px;
   text-align: center;
   font-weight: 200;
+}
+
+.nav-right >div >p{
+  font-weight: 400;
+}
+
+/* BANNER */
+
+.banner >img{
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* BRAND OFFERS */
+
+.brands >h1 , .category >h1{
+  margin: 40px 0px 12px 25px;
+  letter-spacing: 5px;
+  font-size: 29px;
+  font-weight: 700;
+  color: rgb(62, 65, 82);
+}
+
+.offers{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.offers >img{
+  padding-left: 2px;
+  width: 250px;
+  height: 325px;
+}
+
+/* CATEGORY */
+
+.category-img1 >img{
+  padding-left: 5px;
+  width: 250px;
+  height: 380px;
+}
+
+.category-img2{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.category-img2 >img{
+  padding-left: 5px;
+  width: 250px;
+  height: 380px;
+}
+
+/* FOOTER */
+.footer-container{
+  width: 100%;
+  height: 300px;
+  padding: 40px;
+  background-color: #FAFBFC;
+  border: #FAFBFC;
+}
+
+.online-shopping >div >h4{
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+  margin-bottom: 20px;
+}
+
+.online-shopping{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.online-shopping >div >p{
+  color: rgb(105, 107, 121);
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.copyright{
+  width: 100%;
+  height: 45px;
+  padding-right: 25px;
+  color: #94969F;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* SCROLLBAR */
+
+*::-webkit-scrollbar{
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #282c3f;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width:320px) and (max-width:480px){
+
+  .navbar{
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .myntra-logo{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-left{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-left a{
+    font-size: 12px;
+  }
+
+  .nav-center{
+    width: 100%;
+  }
+
+  .nav-right{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .banner img{
+    margin-top: 20px;
+  }
+
+  .brands h1,
+  .category h1{
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+  }
+
+  .offers,
+  .category-img1,
+  .category-img2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+  }
+
+  .offers img,
+  .category-img1 img,
+  .category-img2 img{
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+  }
+
+  .online-shopping{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-container{
+    height: auto;
+  }
+
+  .copyright{
+    justify-content: center;
+    padding: 15px;
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+  .navbar{
+    flex-wrap:wrap;
+    height:auto;
+    row-gap:15px;
+  }
+
+  .myntra-logo{
+    width:12%;
+  }
+
+  .nav-left{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .nav-center{
+    width:60%;
+  }
+
+  .nav-right{
+    width:30%;
+    justify-content:center;
+  }
+
+  .offers,
+  .category-img1,
+  .category-img2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .offers img,
+  .category-img1 img,
+  .category-img2 img{
+    width:220px;
+    height:auto;
+    padding:0;
+  }
+
+  .online-shopping{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:40px;
+  }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+
+  .nav-left{
+    width:40%;
+    gap:15px;
+  }
+
+  .nav-left a{
+    font-size:13px;
+  }
+
+  .nav-center{
+    width:32%;
+  }
+
+  .nav-right{
+    width:18%;
+  }
+
+  .offers,
+  .category-img1,
+  .category-img2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px){
+
+  .navbar{
+    padding:20px;
+  }
+
+  .offers,
+  .category-img1,
+  .category-img2{
+    justify-content:center;
+  }
+
+}
+
+@media screen and (min-width:1201px){
+
+  .container{
+    max-width:1600px;
+    margin:auto;
+  }
+
+}
+
+@media screen and (min-width:1920px){
+
+  .container{
+    max-width:1800px;
+    margin:auto;
+  }
+
 }
