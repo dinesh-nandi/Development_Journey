@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Whatsapp</title>
   <link rel="stylesheet" href="whatsapp.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <div class="container">
@@ -77,25 +78,52 @@
       <section>
         <div class="message">
 
-          <div class="top">
+          <div class="top"  data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
             <img src="../images/whatsApp/section1img.png" alt="Section 1">
           </div>
 
-          <div class="between">
+          <div class="between" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
             <p>
               With private messaging and <br> calling, you can be yourself, speak <br> freely and feel close to the most <br> important people in your life no <br>matter where they are.
             </p>
           </div>
 
-          <div class="end">
+          <div class="end" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
             <img src="../images/whatsApp/section2img.png" alt="Section 2">
           </div>
-          
+
+        </div>
+      </section>
+
+      <section>
+        <div class="video-call">
+
+          <div class="video-call-left" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+            <p>Never miss a moment with voice and video calls</p>
+            <p>
+              From a group call to classmates to a quick <br> call with mom feel like you’re in the same <br> room with voice and video calls.
+            </p>
+            <div class="learn-more">
+              <p class="learn-more-text">
+                Learn more 
+              </p>
+              <img class="learn-more-img" src="../images/whatsApp/angle.svg" alt="Angle">
+            </div>
+          </div>
+
+          <div class="video-call-right" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+            <img src="../images/whatsApp/birthday.png" alt="Birthday">
+          </div>
         </div>
       </section>
     </main>
 
     <footer></footer>
   </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

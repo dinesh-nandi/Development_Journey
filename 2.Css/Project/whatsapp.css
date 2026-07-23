@@ -312,16 +312,6 @@ html,body{
 .top >img{
   padding: 0px 100px;
   width: 100%;
-  animation: top 1s ease-in-out;
-}
-
-@keyframes top {
-  0%{
-    transform: translateY(100px);
-  }
-  100%{
-    transform: translateY(0px);
-  }
 }
 
 .between{
@@ -334,5 +324,54 @@ html,body{
 .end  >img{
   padding: 50px 100px;
   width: 100%;
+}
+
+/* VIDEO CALL */
+
+.video-call{
+  height: 50em;
+  margin: 20px 58px 0px 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.video-call-left{
+  width: 32%;
+  text-align: start;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-call-left p:nth-child(1){
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: -1px;
+}
+
+.video-call-left p:nth-child(2){
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.learn-more{
+  display: flex;
+  gap: 15px;
+}
+
+.learn-more P:nth-child(1){
+  font-size: 16px;
+  border-bottom: 2px solid #25D366;
+}
+
+.learn-more >img{
+  transform: rotate(180deg);
+  width: 8px;
+  height: 12px;
+  margin-top: 25px;
 }
 
