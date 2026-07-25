@@ -607,6 +607,7 @@ html,body{
   border-radius: 30px;
   border: 1px solid white;
   padding-left: 30px;
+  appearance: none;
   -webkit-appearance: none;
 }
 
