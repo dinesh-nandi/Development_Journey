@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Set 2</title>
+  <style>
+    .buy{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 20%;
+    }
+    .bag >button, .item >button{
+      width: 100px;
+      height: 30px;
+      border-radius: 30px;
+      border: none;
+      background-color: lightgreen;
+    }
+    .wishlist >button{
+      width: 250px;
+      height: 30px;
+      border: 3px solid black;
+      border-radius: 10px;
+    }
+
+    .item >button{
+      width: 150px;
+    }
+
+    #cart-summary{
+      margin: 100px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="buy">
+    <div class="bag" onclick="cartQuantity++;  document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`; ">
+      <button>Add to Bag</button>
+    </div>
+  
+    <div class="wishlist" onclick="cartQuantity -=1; document.querySelector('#cart-summary').innerText = `Your bag has ${cartQuantity} items`; ">
+      <button>Move to WishList</button>
+    </div>
+  
+    <div class="item" onclick="cartQuantity +=2; document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`; ">
+      <button>Add 1+1 sale item</button>
+    </div>
+
+  </div>
+
+  <h1 id="cart-summary"></h1>
+
+  <script>
+    let cartQuantity = 0;
+    document.querySelector('#cart-summary').innerText = `Your Bag has ${cartQuantity} items`;
+  </script>
+
+</body>
+</html>
