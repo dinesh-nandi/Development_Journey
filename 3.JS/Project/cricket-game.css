@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+
+.text{
+  text-align: center;
+}
+
+.game{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.bat , .ball , .stump{
+  width: 60px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1px;
+  background-color: rgb(242, 237, 237);
+}

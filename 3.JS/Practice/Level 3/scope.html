@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scope</title>
+</head>
+<body>
+  <h1>Scope</h1>
+  <script>
+
+    // global scope example
+    let age = 17;
+    let message = '';
+    console.log(age);
+  
+    if(age >= 18){
+      console.log(age);
+      message = 'You can drive.';
+    }else{
+      console.log(age);
+      message = 'You can\'t drive.'; 
+    }
+    console.log(age);
+    console.log(message);
+
+    // local scope example
+    let bool = true;
+    if(bool){
+      let name = "Dinesh";
+      console.log(name);
+    }
+
+    console.log(name); //error because of the local scope
+
+  </script>
+</body>
+</html>

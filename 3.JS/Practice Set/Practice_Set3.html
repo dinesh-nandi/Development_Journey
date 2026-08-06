@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Set 3</title>
+</head>
+<body>
+  <h1>Practice Set 3</h1>
+  <script>
+    const age = 67;
+    const gender = 'female';
+    const ticketPrice = 200;
+    let finalPrice;
+
+    if(age < 5){
+      finalPrice = 0;
+    }else if(gender === "female" || age <= 8){
+      finalPrice =  ticketPrice-(ticketPrice*(50/100));
+    }else if(age > 65){
+      finalPrice =  ticketPrice-(ticketPrice*(30/100));
+    }else{
+      finalPrice = ticketPrice;
+    }
+
+    console.log(finalPrice);
+
+  </script>
+</body>
+</html>

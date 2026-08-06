@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truthy Falsy</title>
+ </head>
+ <body>
+  <h1>Truthy and Falsy Value</h1>
+  <script>
+    
+    // Trythy demonstration
+    let name = "Dinesh";
+    if(name){
+      console.log("This is a truthy value");
+    }else{
+      console.log("This is a falsy value");
+    }
+
+    //Falsy Demonstration
+    let num;
+    if(num){
+      console.log("Truthy");
+    }else{
+      console.log("Falsy");
+    }
+
+    let value = null;
+    if(value){
+      console.log("Truthy");
+    }else{
+      console.log("Falsy");
+    }
+
+    let marks = NaN;
+    if(marks){
+      console.log("Truthy");
+    }else{
+      console.log("Falsy");
+    }
+
+    let empty = "";  //space is count as the truthy
+    if(empty){
+      console.log("Truthy");
+    }else{
+      console.log("Falsy");
+    }
+
+    //NaN
+    let umar = Number("Dinesh");
+    console.log(umar);
+
+  </script>
+ </body>
+ </html>

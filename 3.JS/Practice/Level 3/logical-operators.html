@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logical Operators</title>
+</head>
+<body>
+  <h1>Logical Operators</h1>
+  <script>
+
+    // And
+    let age = 5;
+    if(age < 5){
+      console.log("Infant");
+    }else if(age >= 5 && age < 15){
+      console.log("Child");
+    }else if(age >= 15 && age < 18){
+      console.log("Teen");
+    }else{
+      console.log("Adult");
+    }
+
+    //  OR
+    let hasEmail = false;
+    let hasPhn = true;
+
+    if(hasEmail || hasPhn){
+      console.log("Login Successful");
+    }else{
+      console.log("Login Failed");
+    }
+
+
+    // NOT
+    console.log(!true);
+    console.log(!false);
+
+
+  </script>
+</body>
+</html>
