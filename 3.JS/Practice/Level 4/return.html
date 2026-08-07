@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Return</title>
+</head>
+<body>
+  <h1>Return</h1>  
+  <script>
+    function dertermineDriveStatus(){
+
+      let age = 34;
+      if(age === undefined || age === null || Number.isNaN(age)){
+        return "Jis rah pe tum chal rahe ho beta ek din bure fasoge";
+      }
+
+      if(age >= 18){
+        return "gadi chala na";
+      }else{
+        return "jake horlicks pi";
+      }
+
+    }
+
+    console.log(dertermineDriveStatus());
+  </script>
+</body>
+</html>

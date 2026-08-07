@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Set 4</title>
+</head>
+<body>
+  <h1>Practice Set 4</h1>
+  <script>
+
+    function checkingEvenOdd(n){
+      if(n%2==0){
+        return 'Even';
+      }
+      return 'Odd';
+    }
+
+    console.log(checkingEvenOdd(3));
+
+    function largerNumber(a , b){
+      if(a > b){
+        return `${a} is greater`;
+      }else if(a == b){
+        return `They are equal`;
+      }
+      return `${b} is greater`;
+    }
+
+    console.log(largerNumber(23,50));
+
+    function convertToFahrenheit(celsius){
+      return (9/5)*celsius + 32;
+    }
+
+    console.log(`For ${45} deg celsius the fahrenheit is ${convertToFahrenheit(45)}`);
+
+  </script>
+</body>
+</html>

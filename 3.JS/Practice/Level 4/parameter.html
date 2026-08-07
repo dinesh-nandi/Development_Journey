@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parameter</title>
+</head>
+<body>
+  <h1>Parameter</h1>
+  <script>
+
+    function sum(a , b){
+      let sum = a + b;
+      return sum;
+    }
+
+    console.log(sum(3,5));
+    console.log(sum(8,32));
+
+    function greeting(name = "payaree"){
+      console.log(`Namaster ${name} uncle`);
+    }
+
+    greeting();
+    greeting('titu');
+
+  </script>
+</body>
+</html>
