@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Reference</title>
+</head>
+<body>
+  <h1>Object Reference</h1>
+  <script>
+
+    const person = {
+      name : 'Dinesh',
+      age : 99,
+      country : 'Norway', 
+      education : {
+        sem : 5,
+        cgpa : 9
+      },
+    };
+
+    const personCopy = person;
+    console.log(person , personCopy);
+
+    personCopy.name = 'Halland';
+    console.log(person , personCopy);
+
+    const personShallowCopy = {...person};
+    console.log(person,personShallowCopy);
+
+    personShallowCopy.name = "Jude";
+    console.log(person , personShallowCopy);
+
+    let personDeepCopy = structuredClone(person);
+    console.log(person , personDeepCopy);
+
+    let a = 10;
+    let b = 4;
+    a = b;
+    console.log(a);
+
+    let p = {
+      pop : 'abc',
+    }
+    let q = {
+      pop : 'abc',
+    }
+
+    console.log(p == q);
+    console.log(p === q);
+
+    let s = {
+      name : 'zero',
+    }
+
+    let t = s;
+    console.log(s == t);
+
+
+  </script>
+</body>
+</html>

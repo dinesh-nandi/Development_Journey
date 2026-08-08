@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  <h1>Object</h1>
+  <script>
+
+    let product = {
+      company : 'mango',
+      price : 653,
+      established : 1998,
+      'item-name' : 'T-Shirt',
+    };
+    
+    let propertyName = 'item-name';
+
+    // accessing objects by dot operator
+    console.log(product);
+    console.log(product.company);
+    console.log(product.price);
+    console.log(product.established);
+    console.log(product.propertyName); //undefined
+    
+    // accessing objects by bracket notion
+    console.log(product['company']);
+    console.log(product['price']);
+    console.log(product['established']);
+    console.log(product['item-name']);
+    console.log(product[propertyName]);
+
+    // Removing an object
+    delete product.company;
+    console.log(product);
+
+    delete product['established'];
+    console.log(product);
+
+    // Updating 
+    product.price = 999;
+    console.log(product.price);
+
+    // Adding an object
+    product.color = 'Black';
+    console.log(product);
+
+    product.size = 'Large';
+    console.log(product['size']);
+
+
+  </script>
+</body>
+</html>

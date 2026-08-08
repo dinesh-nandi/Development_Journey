@@ -51,6 +51,20 @@
 
   </div>
   <script>
+
+    let score = {
+      win : 0,
+      loss : 0,
+      tie : 0,
+
+      displayscore: function(){
+        return  `Won  : ${score.win}
+                Loss  : ${score.loss}
+                Tie   : ${score.tie}`;
+      }
+      
+    };
+
     function choice(){
       
       let randomChoice =  Math.random()*3;
@@ -66,19 +80,26 @@
     }
 
     function comparing(userChoice , computerChoice){
-      
+
       if(userChoice === computerChoice){
+        score.tie++;
         return `it's a tie`;
       }else if( (userChoice === 'Bat' && computerChoice === 'Ball') || (userChoice === 'Ball' && computerChoice === 'Stump') || (userChoice === 'Stump' && computerChoice === 'Bat') ){
+        score.win++;
         return `User won`;
       }else{
+        score.loss++;
         return `Computer won`;
       }
     }
 
     function alertMsg(userChoice , computerChoice , result){
-      alert(`You have choose to ${userChoice}. Computer choose to ${computerChoice} and ${result}`);
+      alert(`You have choose to ${userChoice}. Computer choose to ${computerChoice} and ${result} 
+      ${console.log(score.dispalyScore())}
+      `);
     }
+
+
 
   </script>
 </body>

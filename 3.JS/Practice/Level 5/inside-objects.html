@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inside Objects</title>
+</head>
+<body>
+  <h1>Inside Function</h1>
+  <script>
+    let person = {
+      name : 'Dinesh',
+      age : 20,
+      gender : 'male',
+      
+      education : {
+        college : 'IIT',
+        branch : 'CSE',
+        semester : 5,
+        cgpa : 9,
+      },
+
+      displayAge:  function(){
+        return `My age is ${this.age}. My name is ${this.name}`;
+      }
+
+    }
+
+    console.log(person.education.branch);
+    console.log(person.education);
+    console.log(person.displayAge());
+
+  </script>
+</body>
+</html>
