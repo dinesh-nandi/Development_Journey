@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Manipulation</title>
+</head>
+<body>
+  <h1 id="header">Dom Manipulation</h1>
+
+  <button class="my-button">Click Me</button>
+  <div class="my-div">This is a div.</div>
+
+  <script>
+
+    console.log(document.getElementById('header'));
+    console.log(document.getElementsByClassName('my-button')[0]);
+
+    console.log(document.getElementById('header').innerHTML);
+    console.log(document.getElementsByClassName('my-div')[0].innerText = "I am inside the div.");
+
+    console.log(document.querySelector('button').classList)
+    console.log(document.querySelector('button').classList.add('your-button'));
+    console.log(document.querySelector('button').classList.remove('your-button'));
+
+    let button = document.createElement('button');
+    let para = document.createElement('p');
+    button.innerText = 'Submit';
+    para.innerText = 'Hi, I replaced the button tag.';
+
+    document.querySelector('.my-div').appendChild(button);
+    document.querySelector('.my-div').replaceChild(para ,button);
+    document.querySelector('.my-div').remove();
+    
+  </script>
+</body>
+</html>

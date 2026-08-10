@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Set 6</title>
+  <style>
+    .reset{
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Practice Set 6</h1>
+
+  <h1 id="greeting"></h1>
+
+  <button onclick="clicked();"
+  class="click">Click me</button>
+
+  <button onclick="deleted();"
+  class="reset">Reset</button>
+
+  <h1 id="show"></h1>
+
+  <script>
+
+    let mydate = new Date();
+    let hours = mydate.getHours();
+    let show = document.querySelector('#greeting');
+    
+    if(hours > 5 && hours < 12){
+      show.innerText = `Good Morning, ${greet()}`;
+    }else if(hours >=12 && hours > 18){
+      show.innerText = `Good Evening, ${greet()}`;
+    }else{
+      show.innerText = `Good Night, ${greet()}`;
+    }
+
+    function greet(){
+      return "Aarohi";
+    }
+
+
+    let getClick = localStorage.getItem('noOfClick');
+    let noOfClick = JSON.parse(localStorage.getItem('noOfClick')) ?? {
+      click : 0,
+      color : "yellow",
+    };
+
+    function display(){
+      document.querySelector('#show').innerText = `No of times the button has been clicked ${noOfClick.click}`;
+    }
+
+    function startColor(){
+      if(noOfClick.click%2!==0){
+        noOfClick.color = "hotpink";
+      }else{
+        noOfClick.color = "yellow";
+      }
+
+      document.querySelector('.click').style.backgroundColor =
+      noOfClick.color;
+    }
+
+    display();
+    startColor();
+
+
+    function clicked(){
+
+      noOfClick.click++;
+      display();
+      startColor();
+      localStorage.setItem('noOfClick' , JSON.stringify(noOfClick));
+
+    }
+
+    function deleted(){
+      localStorage.clear();
+
+      noOfClick = {
+        click : 0,
+        color : "yellow",
+      };
+
+      display();
+      startColor();
+
+    }
+
+    
+  </script>
+</body>
+</html>

@@ -7,6 +7,7 @@
 .container{
   width: 100vw;
   height: 100vh;
+  background-color: lightblue;
 }
 
 .text{
@@ -19,7 +20,11 @@
   margin: 20px;
 }
 
-.bat , .ball , .stump , .reset{
+.gameplay{
+  text-align: center;
+}
+
+.reset{
   width: 60px;
   height: 25px;
   border: 2px solid black;
@@ -28,4 +33,18 @@
   padding: 1px;
   background-color: rgb(242, 237, 237);
   cursor: pointer;
+  margin: 5% 48%;
+}
+
+.bat,.ball,.stump{
+  height: 150px;
+  width: 150px;
+  border: none;
+  background-color: beige;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.choice-img{
+  height: 100px;
 }

@@ -21,7 +21,8 @@
       alertMsg(userChoice , computerChoice , result);
 
       ";
-      class="bat">Bat 
+      class="bat">
+      <img src="../Images/cricket-game/bat.png" alt="Bat" class="choice-img">
     </button>
 
     <button
@@ -33,7 +34,8 @@
       alertMsg(userChoice , computerChoice , result);
 
       ";
-      class="ball">Ball
+      class="ball">
+      <img src="../Images/cricket-game/ball.png" alt="Ball" class="choice-img">
     </button>
 
     <button 
@@ -45,13 +47,23 @@
       alertMsg(userChoice , computerChoice , result);
 
       ";
-      class="stump">Stump
+      class="stump">
+      <img src="../Images/cricket-game/stump.png" alt="Stump" class="choice-img">
     </button>
+
+  </div>
+
+  <div class="gameplay">
+    <h1 id="user-move"></h1>
+    <h1 id="computer-move"></h1>
+    <h1 id="result"></h1>
+    <h1 id="score"></h1>
+
 
     <div onclick="deleted();"
     class="reset">Reset</div>
     </div>
-
+    
   </div>
   <script>
     
@@ -98,10 +110,17 @@
     }
 
     function alertMsg(userChoice , computerChoice , result){
+
       localStorage.setItem('Score' , JSON.stringify(score));
-      alert(`You have choose to ${userChoice}. Computer choose to ${computerChoice} and ${result} 
-      ${score.displayScore()}
-      `);
+
+      document.querySelector('#user-move').innerText = userChoice !== undefined ? `You have choose to ${userChoice}.` : ' ';
+
+      document.querySelector('#computer-move').innerText = computerChoice !== undefined ? `Computer choose to ${computerChoice}.` : ' ';
+
+      document.querySelector('#result').innerText = result !== undefined ? `${result}.` : ' ';
+
+      document.querySelector('#score').innerText = score.displayScore();
+
     }
 
     function deleted(){
@@ -118,8 +137,10 @@
                   Won : ${this.win}
                   Loss : ${this.loss}
                   Tie : ${this.tie}`;
-  };
-    }
+      };
+
+      alertMsg();
+    };
 
 
 
