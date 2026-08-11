@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Properties Methods</title>
+</head>
+<body>
+  <h1>Arrays Properties & Methods</h1>
+  <script>
+
+    let num = [10,20,30,40,50,60,70,80];
+    console.log("Says the size of the array: " + num.length);
+    console.log(Array.isArray(num));
+    console.log(num);
+
+    console.log("Adds element from the last : " + num.push(90));
+    console.log(num);
+    console.log("Remove the last element : " + num.pop());
+    console.log(num);
+
+    console.log("Adds element in the beginning : " + num.unshift(101));
+    console.log(num);
+    console.log("Remove element from the beginning : " + num.shift());
+    console.log(num);
+
+    num.splice(2,2);
+    console.log("Splice removes the element within a range: " + num);
+
+    console.log("To string : " + num.toString());
+
+    let arr = [4,22,6,1,8,167];  //incorrect because it compares lexicograpcial 
+    console.log(arr);
+    console.log(arr.sort());
+
+    console.log(arr.valueOf());
+
+    let arr2 = arr;
+    arr2[0] = 999;
+    console.log(arr);
+
+    let [a,b,c,d,e,f] = arr;
+    console.log(a + ' ' + b + ' ' + c + ' ' + d + ' ' + e + ' ' + f);
+
+    let fruits = ["Apple" , "Banana" , "Mango" , "Banana"];
+    console.log(fruits.indexOf("Banana"));
+    console.log(fruits.indexOf("Mango"));
+    console.log(fruits.indexOf("Orange"));
+    
+    console.log(fruits.lastIndexOf("Banana"));
+    console.log(fruits.lastIndexOf("Apple"));
+
+    console.log(fruits.includes("Red"));
+    console.log(fruits.includes("Mango"));
+
+    console.log(fruits.find("Apple"));
+
+  </script>
+</body>
+</html>
