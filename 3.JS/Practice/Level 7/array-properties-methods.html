@@ -53,8 +53,18 @@
     console.log(fruits.includes("Red"));
     console.log(fruits.includes("Mango"));
 
-    console.log(fruits.find("Apple"));
+    let numbers = [100,200,300,400,500,600,700,800];
+    
+    let result = numbers.find(function(value){
+      return value > 500;
+    });
+    console.log(result);
 
+    let index = numbers.findIndex(function(value){
+      return value > 700;
+    });
+    console.log(index);
+    
   </script>
 </body>
 </html>
