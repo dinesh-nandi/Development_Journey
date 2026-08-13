@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SetTimeout & SetInterval</title>
+</head>
+<body>
+  <h1>SetTimeout & SetInterval</h1>
+  <script>
+
+    let alaram = () => console.log("Ting Tong utha ja bkl");
+    let timerId = setTimeout(alaram,3000);
+    console.log(timerId);
+    // clearTimeout(timerId);
+
+    let intervalId = setInterval(alaram , 5000);
+    setTimeout( () => {
+      clearInterval(intervalId);
+    }, 20000);
+
+  </script>
+</body>
+</html>

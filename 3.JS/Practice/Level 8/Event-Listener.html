@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listener</title>
+</head>
+<body>
+  <h1>Event Listener</h1>
+
+  <button id="my-button">Click Me</button>
+  <br>
+  <br>
+  <input type="text" id="name">
+  <p id="output"></p>
+
+
+  <script>
+    
+    let buttonElement = document.querySelector('#my-button');
+    let behaviour = event => console.log("You tapped me");
+    let printDate = event => console.log(new Date());
+
+    buttonElement.addEventListener('click' , behaviour);
+    buttonElement.addEventListener('click' , printDate);
+    buttonElement.removeEventListener('click' , behaviour);
+
+    let inputElement = document.querySelector('#name');
+    let funcInput = event => document.querySelector('#output').innerText = inputElement.value;
+
+    inputElement.addEventListener('input' , funcInput);
+
+  </script>
+</body>
+</html>

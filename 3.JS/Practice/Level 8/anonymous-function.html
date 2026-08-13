@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonymous Function As Values</title>
+</head>
+<body>
+  <h1>Anonymous Function</h1>
+  <script>
+
+    let sum = function(num1 , num2){
+      return num1 + num2;
+    }
+    console.log(sum(20 , 10));
+    console.log(sum(10 , 90));
+    let newSum = sum;
+    console.log(newSum(43,78));
+
+    let threeSum = function(num1,num2,num3,sumOfTwo){
+      let sum1 = sumOfTwo(num1,num2);
+      return sumOfTwo(sum1,num3);
+    }
+    console.log(threeSum(54 , 7 , 9 , sum));
+
+    console.log(threeSum);
+    console.log(typeof threeSum);
+
+
+  </script>
+</body>
+</html>
