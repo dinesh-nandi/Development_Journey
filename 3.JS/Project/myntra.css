@@ -1,0 +1,281 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  overflow-x: hidden;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+}
+
+/* NAVBAR*/
+.navbar{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.myntra-logo{
+  width: 6%;
+  display: flex;
+  justify-content: end;
+}
+
+.myntra-logo >img{
+  width: 60px;
+  height: 40px;
+}
+
+.nav-left{
+  width: 35%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-left >a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+
+.nav-left >a >sup{
+  position: relative;
+  top: -0.4em;
+  color: red;
+  font-size: 13px;
+  vertical-align: baseline;
+}
+
+.nav-left > a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -36px;          
+  width: 100%;
+  height: 4px;
+  background-color: #ff3f6c;
+  display: none;
+}
+
+.nav-left > a:hover::after{
+  display: block;
+}
+
+.nav-center{
+  width: 30%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  background-color: #F5F5F6;
+
+}
+
+.nav-center >i{
+  padding: 13px;
+}
+.nav-center >input{
+  width: 95%;
+  height: 39px;
+  padding-left: 5px;
+  background-color: #F5F5F6;
+  border: none;
+  
+}
+
+.nav-right{
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.nav-right >div >p{
+  font-weight: 400;
+}
+
+.carry-bag{
+  cursor: pointer;
+}
+
+.nav-right div:nth-child(3) >p{
+  cursor: pointer;
+}
+
+.carry-bag{
+  position: relative;
+}
+
+.carry-bag sup{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+.js-itemsInBag{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 13px;
+  bottom: 9px;
+  width: 15px;
+  height: 15px;
+  color: white;
+  background-color: #F16565;
+  border: none;
+  border-radius: 50%;
+  font-size: 11px;
+  font-family: "Assistant", sans-serif;
+  vertical-align: baseline;
+}
+
+/* MAIN */
+.shopping_bag{
+  display: flex;
+  justify-content: center;
+  min-height: 70%;
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 30px;
+}
+
+.items{
+  width: 20%;
+  margin: 25px;
+}
+
+.items >img{
+  width: 100%;
+}
+
+.item-description{
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.rating >p{
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.heading >h4{
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.heading >p{
+  color: #535766;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 3px 0px;
+}
+
+.price >p{
+  margin: 8px 0px;
+  font-weight: bold;
+}
+
+.price >p >strike{
+  font-size: 12px;
+  color: #535766;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+.discount{
+  color: #FF905A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bag-btn{
+  width: 100%;
+  height: 35px;
+  background-color: #90EE90;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+
+/* FOOTER */
+.footer-container{
+  width: 100%;
+  height: 300px;
+  padding: 40px;
+  background-color: #FAFBFC;
+  border: #FAFBFC;
+}
+
+.online-shopping >div >h4{
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+  margin-bottom: 20px;
+}
+
+.online-shopping{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.online-shopping >div >p{
+  color: rgb(105, 107, 121);
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.copyright{
+  width: 100%;
+  height: 45px;
+  padding-right: 25px;
+  color: #94969F;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* SCROLLBAR */
+
+*::-webkit-scrollbar{
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #282c3f;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #888;
+  border-radius: 10px;
+}
+
