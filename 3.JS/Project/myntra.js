@@ -1,6 +1,7 @@
 let itemsElement = document.querySelector('.products');
 const items = [
   {
+    id: 1,
     image: "../Images/myntra/1.jpg",
     alt: "Img1",
     rating: {
@@ -15,6 +16,7 @@ const items = [
   },
 
   {
+    id: 2,
     image: "../Images/myntra/2.jpg",
     alt: "Img2",
     rating: {
@@ -29,6 +31,7 @@ const items = [
   },
 
   {
+    id: 3,
     image: "../Images/myntra/3.jpg",
     alt: "Img3",
     rating: {
@@ -43,6 +46,7 @@ const items = [
   },
 
   {
+    id: 4,
     image: "../Images/myntra/4.jpg",
     alt: "Img4",
     rating: {
@@ -57,6 +61,7 @@ const items = [
   },
 
   {
+    id: 5,
     image: "../Images/myntra/5.jpg",
     alt: "Img5",
     rating: {
@@ -71,6 +76,7 @@ const items = [
   },
 
   {
+    id: 6,
     image: "../Images/myntra/6.jpg",
     alt: "Img6",
     rating: {
@@ -85,6 +91,7 @@ const items = [
   },
 
   {
+    id: 7,
     image: "../Images/myntra/7.jpg",
     alt: "Img7",
     rating: {
@@ -99,6 +106,7 @@ const items = [
   },
 
   {
+    id: 8,
     image: "../Images/myntra/8.jpg",
     alt: "Img8",
     rating: {
@@ -106,57 +114,67 @@ const items = [
       noOfStars: 5200,
     },
     heading: "Nivea",
-    para: "Men Fresh Deodrant 150ml",
+    para: "Men Fresh Deodorant 150ml",
     current_price: "Rs 142",
     original_price: "Rs 205",
     discount_price: "(50% OFF)",
   },
 ];
 
-let productsHTML = "";
-
-items.forEach( item => {
-  productsHTML +=`
-    <div class="items">
+if(itemsElement){
+  let productsHTML = "";
   
-            <img src="${item.image}" alt="${item.alt}">
-
-            <div class="item-description">
-              <div class="rating">
-                <p>${item.rating.stars}⭐ | ${item.rating.noOfStars}</p>
-              </div>
+  items.forEach( item => {
+    productsHTML +=`
+      <div class="items">
     
-              <div class="heading">
-                <h4>${item.heading}</h4>
-                <p>${item.para}</p>
+              <img src="${item.image}" alt="${item.alt}">
+  
+              <div class="item-description">
+                <div class="rating">
+                  <p>${item.rating.stars}⭐ | ${item.rating.noOfStars}</p>
+                </div>
+      
+                <div class="heading">
+                  <h4>${item.heading}</h4>
+                  <p>${item.para}</p>
+                </div>
+      
+                <div class="price">
+                  <p>${item.current_price} <strike>${item.original_price}</strike> <span class="discount">${item.discount_price}</span></p>
+                </div>
+                
+                <button class="bag-btn" data-id="${item.id}" >Add to Bag</button>
               </div>
-    
-              <div class="price">
-                <p>${item.current_price} <strike>${item.original_price}</strike> <span class="discount">${item.discount_price}</span></p>
-              </div>
-              
-              <button class="bag-btn" >Add to Bag</button>
-            </div>
+  
+      </div>
+    `;
+  });
+  
+  itemsElement.innerHTML = productsHTML;
 
-    </div>
-  `;
-});
+}
 
-itemsElement.innerHTML = productsHTML;
 
 let addToBagElement = document.querySelectorAll('.bag-btn');
 let bagCount = document.querySelector(".carry-bag").querySelector("sup"); 
+let bagItem = []
 
 let count = Number(localStorage.getItem("Items")) || 0;
 
-let itemsInBag = event => {
-  count++;
-  if(count > 0){
-    bagCount.classList.add('js-itemsInBag');
-  }
-  bagCount.classList.add('js-itemsInBag');
+if(count > 0){
   bagCount.innerHTML = count;
-  localStorage.setItem("Items" , `${count}`);
+  bagCount.classList.add('js-itemsInBag');
+}
+// let itemsInBag = event => {
+//   count++;
+//   bagCount.classList.add('js-itemsInBag');
+//   bagCount.innerHTML = count;
+//   localStorage.setItem("Items" , `${count}`);
+// };
+
+let itemsInBag = (event) => {
+    console.log(event.target.dataset.id);
 };
 
 
@@ -164,5 +182,9 @@ addToBagElement.forEach(val => {
   val.addEventListener('click' , itemsInBag);
 });
 
+let bagItems = JSON.parse(localStorage.getItem("BagItems")) || [];
 
+bagItems.forEach(index => {
+    console.log(items[index]);
+});
 

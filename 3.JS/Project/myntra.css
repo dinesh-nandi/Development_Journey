@@ -118,6 +118,16 @@ html,body{
 
 .carry-bag{
   position: relative;
+  color: black;
+}
+
+.inside-bag{
+  text-decoration: none;
+}
+
+.inside-bag >p{
+  color: black;
+  font-weight: 400;
 }
 
 .carry-bag sup{
@@ -279,3 +289,116 @@ html,body{
   border-radius: 10px;
 }
 
+/* Myntra Bag HTML Code*/
+.order{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-right{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family:"Assistant",sans-serif;
+  width: 370px;
+  margin-top: 30px;
+  margin-right: 10%;
+}
+
+.price{
+  font-size: 13px;
+  font-weight: 700;
+  color: #535766;
+  text-transform: uppercase;
+}
+
+.price-row{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.discount-price{
+  color: #03A685;
+}
+
+.total{
+  font-weight: 700;
+}
+
+.place-order{
+  color: white;
+  background-color: #FF3F6C;
+  border: none;
+  width: 370px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-left{
+  display: flex;
+  width: 50%;
+  margin: 2% 0% 10% 12%;
+  border: 2px solid #F5F5F6;
+
+}
+
+.image >img{
+  width: 40%;
+  margin: 10px 0px 10px 10px;
+}
+
+.img-description{
+  margin-top: 10px;
+  margin-left: -150px;
+  font-family: "Assistant", sans-serif;
+  color: #535766;
+}
+
+.brand{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.brand-desc{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.current-price{
+  font-size: 16px;
+}
+
+.original_price{
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.discount_price{
+  font-size: 14px;
+}
+
+.delivery{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.delivery-time{
+  font-size: 15px;
+}
+
+.date{
+  color: #5CA685;
+}
+
+.remove-item{
+  height: 20px;
+  margin-top: 5px;
+  margin-left: 380px;
+  font-size: large;
+  cursor: pointer;
+}
