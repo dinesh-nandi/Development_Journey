@@ -341,20 +341,35 @@ html,body{
 
 .main-left{
   display: flex;
+  flex-direction: column;
   width: 50%;
   margin: 2% 0% 10% 12%;
-  border: 2px solid #F5F5F6;
+}
 
+.bag-item{
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #F5F5F6;
+  border-bottom: none;
+  padding: 15px;
+  position: relative;
+}
+
+.bag-item:last-child{
+  border-bottom: 1px solid #F5F5F6;
+}
+
+.image{
+  width: 20%;
 }
 
 .image >img{
-  width: 40%;
-  margin: 10px 0px 10px 10px;
+  width: 100%;
 }
 
 .img-description{
-  margin-top: 10px;
-  margin-left: -150px;
+  flex: 1;
+  margin-left: 15px;
   font-family: "Assistant", sans-serif;
   color: #535766;
 }
@@ -369,17 +384,19 @@ html,body{
   font-weight: 400;
 }
 
-.current-price{
+.current_price{
   font-size: 16px;
 }
 
 .original_price{
   font-size: 12px;
   text-decoration: line-through;
+  margin-left: 6px;
 }
 
 .discount_price{
   font-size: 14px;
+  margin-left: 6px;
 }
 
 .delivery{
@@ -396,9 +413,9 @@ html,body{
 }
 
 .remove-item{
-  height: 20px;
-  margin-top: 5px;
-  margin-left: 380px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
   font-size: large;
   cursor: pointer;
 }
