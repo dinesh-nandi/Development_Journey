@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rest & Spread Opertator</title>
+</head>
+<body>
+  <h1>Spread & Rest</h1>
+  <script>
+    
+    //Rest Operator
+    function sum(...num){
+      let total = num[0] + num[1] + num[2];
+      return total;
+    }
+    console.log(sum(2,5,3));
+
+    //Spread Operator
+    let obj = {
+      name : "Jhon",
+      food : "Burger,Chips,Cold Drink",
+      price : 9999,
+    };
+
+    let obj1 = {...obj};
+    console.log(obj1);
+
+    let arr1 = [1,2,3,4,5];
+    let arr2 = [6,7,8,9,10];
+    let newArr = [...arr1 , ...arr2];
+    console.log(newArr);
+    
+  </script>
+</body>
+</html>

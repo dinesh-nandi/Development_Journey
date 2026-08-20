@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoisting</title>
+</head>
+<body>
+  <h1>Hoisting</h1>
+  <script>
+
+    console.log(a);
+    var a = 10;
+    console.log(a);
+
+    // console.log(b);   //Reference Error
+    // let b = 10;
+    // console.log(b);
+
+    // console.log(pi);   //Reference Error
+    // const pi = 3.14;
+    // console.log(pi);
+
+    fun();
+    function fun(){
+      console.log("Hello JS");
+    }
+  </script>
+</body>
+</html>
