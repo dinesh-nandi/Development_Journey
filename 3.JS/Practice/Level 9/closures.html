@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closures</title>
+</head>
+<body>
+  <h1>Closures</h1>
+  <script>
+    function makeFunc(){
+      const name = "Mozilla";
+
+      function displayName(){
+        console.log(name);
+        console.log(num2);
+      }
+      const num2 = 45;
+      return displayName;
+    }
+
+    const myFunc = makeFunc();
+    console.log(myFunc);
+
+    </script>
+</body>
+</html>
