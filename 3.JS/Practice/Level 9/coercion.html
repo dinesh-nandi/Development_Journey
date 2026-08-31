@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coercion</title>
+</head>
+<body>
+  <h1>Coercion</h1>
+  <script>
+
+    let a = 100;
+    let b = "200";
+    let c = Number("400");
+    let d = a + b;
+    let e = a + c;
+    console.log(typeof d);
+    console.log(typeof e);
+
+
+    console.log(7 + null);
+    console.log("7" + null);
+    console.log(4 + true);
+    console.log(5 - "56");
+    console.log("hello" - 13);
+    console.log({} - 3);
+    console.log(undefined - undefined);
+
+  </script>
+</body>
+</html>
